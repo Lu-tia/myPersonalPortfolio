@@ -1,5 +1,7 @@
 * {
     font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,34 +11,57 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
+
 .box {
     height: 90vh;
-    margin: 50px;
+    margin: 2rem;
     border: 2px solid white;
+    overflow: auto;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+.tablinks {
+    font-size: 30px !important;
+
+}
+
+.subtitle {
+    font-size: 20px !important;
+    color: #ccc;
+}
+
+
+.tab {
+    font-size: 20px !important;
+    margin-right: 130px;
 
 }
 
 
-
-#title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    color: #fff;
-    text-align: center;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 50px;
-    letter-spacing: 10px;
-    margin-top: -60px;
-    padding-left: 10px;
+.nav-link {
+    color: #aaa8a891 !important;
 }
 
-#title span {
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+@media (min-width: 1800px) {
+
+    .box {
+        font-size: 26px !important;
+    }
+}
+
+
+.imgme {
+    border-radius: 50%;
+    width: 250px;
+
 }
 
 #stars {
@@ -531,7 +556,8 @@ body {
     width: 3px;
     height: 3px;
     background: transparent;
-    animation: animStar 150s linear infinte;
+    border-radius: 40%;
+    animation: animStar 150s linear infinite;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
         948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
         1268px 1635px #fff, 1820px 598px #fff, 642px 1900px #fff, 296px 57px #fff,
@@ -564,8 +590,8 @@ body {
     content: '';
     position: absolute;
     top: 2000px;
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     background: transparent;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
         948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
@@ -603,5 +629,58 @@ body {
 
     to {
         transform: translateY(-2000px);
+    }
+}
+
+
+.tab {
+    overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+
+
+
+.tablinks {
+    cursor: pointer;
+
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
+/* Change background color of buttons on hover */
+.tab a:hover {
+
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab a.active {
+    color: white;
+
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+
+    color: white;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

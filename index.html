@@ -24,7 +24,6 @@
 
 
 <body>
-
     <header>
         <section class="wrapper">
             <div id="stars"></div>
@@ -35,9 +34,15 @@
     </header>
 
     <div class="box">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" aria-label="Ninth navbar example">
-            <div class="container-xl">
-                <a class="navbar-brand" href="#">Container XL</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <div class=" title ms-5">
+                    <h1 class="navbar-brand mt-3"><a href="#" class="tablinks"
+                            onclick="openCity(event, 'Home')">Caricchia <br> Lucrezia Romana</a></h1>
+                    <span class="subtitle">Junior Frontend & Designer</span>
+                </div>
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,45 +50,67 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample07XL">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto tab">
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a href="#" class="nav-link " onclick="openCity(event, 'London')">About Me</a>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a href="#" class="nav-link " onclick="openCity(event, 'Paris')">Works</a>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a href="#" class="nav-link " onclick="openCity(event, 'Tokyo')">Contacts</a>
+
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+
                     </ul>
-                    <form role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    </form>
+
                 </div>
             </div>
         </nav>
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <!-- Tab content -->
+                    <div id="London" class="tabcontent">
+                        <div class="row ">
+                            <div class="col-lg-6 d-flex justify-content-end mb-4">
+                                <img src="./assets/default.png" class="imgme" alt="">
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="">About me</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum eius earum
+                                    molestiae eos! Facere molestiae aliquid quisquam quis unde sunt iure esse eius
+                                    dolor. Provident molestiae ab neque quae.</p>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
-
-                <div class="col">
-
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="Paris" class="tabcontent">
+                        <h3>Works</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-start">
+                    <div id="Tokyo" class="tabcontent">
+                        <h3>Contacts</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
                 </div>
             </div>
 
         </div>
+
+        <script src="main.js"></script>
     </div>
 
 

@@ -709,6 +709,11 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .wrapper .icon span {
     display: block;

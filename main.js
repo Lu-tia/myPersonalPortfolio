@@ -1,3 +1,5 @@
+//Funzione per la TabContent in BOX
+
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -19,3 +21,19 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+
+
+//Navigator.Clipboard per il copy dell'email da icona
+
+const copyButton = document.querySelector('#copy')
+const text = "Lucrezia.caricchia@gmail.com"
+
+copyButton.addEventListener('click', () => {
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            console.log(`"${text}" was copied to your clipboard.`)
+        })
+        .catch(err => {
+            console.error(`Error copying text to clipboard: ${err}`)
+        })
+})

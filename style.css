@@ -23,6 +23,15 @@ body {
     margin-top: 15px;
 }
 
+.mobile-logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    margin-right: 50px;
+
+}
+
 .tablinks {
     font-size: 30px !important;
 

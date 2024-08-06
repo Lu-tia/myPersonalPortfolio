@@ -62,6 +62,7 @@ body {
 .imgme {
     border-radius: 50%;
     width: 250px;
+    height: 250px;
 
 }
 
@@ -733,7 +734,6 @@ body {
 
 }
 
-
 .wrapper .icon:hover span a {
     color: #fff;
 }
@@ -741,8 +741,6 @@ body {
 .wrapper .icon:hover span {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
-
-
 
 .wrapper .linkedin:hover span {
     background: #0a66c2;
@@ -763,7 +761,7 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
-    padding-right: 170px;
+    padding-left: 5px;
 }
 
 .item-hints .hint {
@@ -877,7 +875,11 @@ body {
 }
 
 .item-hints .hint[data-position="4"] .hint-content {
-    bottom: 60px;
-    left: 40%;
+    bottom: 62px;
+    left: 41%;
     margin-left: 56px;
+}
+
+.hint-dot span i {
+    font-size: 25px;
 }

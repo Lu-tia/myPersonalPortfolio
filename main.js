@@ -31,9 +31,9 @@ const text = "Lucrezia.caricchia@gmail.com"
 copyButton.addEventListener('click', () => {
     navigator.clipboard.writeText(text)
         .then(() => {
-            console.log(`"${text}" was copied to your clipboard.`)
+            console.log(`"${text}" was copied to your clipboard.`);
         })
         .catch(err => {
-            console.error(`Error copying text to clipboard: ${err}`)
+            console.error(`Error copying text to clipboard: ${err}`);
         })
 })
